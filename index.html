@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Lumina 3D | Barça Tribute</title>
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&family=Great+Vibes&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/scenes.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/ui.css">
+</head>
+<body>
+
+<audio id="bg-music" loop>
+    <source src="https://audio.com/andrada-nistor/audio/coldplay-viva-la-vida-official-instrumental" type="audio/mpeg">
+</audio>
+
+<div id="start-screen">
+    <div id="start-text">Tap to Begin ❤️</div>
+</div>
+
+<div id="overlay"></div>
+<div id="hint">Tap the Golden Crest ✨</div>
+<div id="white-flash"></div>
+
+<div id="transition-text-container">
+    <h1>
+        <span class="fcb-blue">MÉS QUE</span> <br>
+        <span class="fcb-red">UN CLUB</span>
+    </h1>
+    <p style="color: #edbb00; font-weight: 700; letter-spacing: 2px;">EST. 1899</p>
+</div>
+
+<div class="gallery-wrapper" id="gallery-view">
+    <div class="col" id="col-1"></div>
+    <div class="col" id="col-2"></div>
+    <div class="col" id="col-3"></div>
+    <div class="col" id="col-4"></div>
+    <div class="col" id="col-5"></div>
+</div>
+
+<button id="next-btn">Next Chapter 🏆</button>
+
+<div id="paper-container">
+    <div class="paper" id="paper">
+        <div class="fold-text">Tap to Read 💌</div>
+        
+        <div class="paper-content ink-effect">
+            <div class="letter-top-label ink">Blaugrana Hearts 💌</div>
+            <div class="letter-sub-label ink">Loyalty, Passion, and You</div>
+            
+            <div class="letter-card-header ink"><div class="arrow-icon">➜</div><span>To my favorite Culé</span></div>
+            
+            <div class="letter-greeting ink">Barcelona,</div>
+            
+            <div class="letter-body ink">
+                <br><br>
+                From the founding dream of Joan Gamper in 1899 to the global empire of today, being a Culé is a commitment to a specific way of life. It’s about more than winning trophies; it’s about the "Tiki-Taka" DNA—the art of the pass, the vision of La Masia, and the unwavering loyalty to our colors.
+                <br><br>
+                We have seen legends rise from the dirt of the old pitches to the height of the Ballon d'Or. We have felt the roar of 99,000 voices singing 'Cant del Barça' in unison. We carry the weight of history and the hope of the future.
+                <br><br>
+                This is a tribute to the style that changed football forever. To the club that stands as a symbol of identity and freedom. 
+                
+                <div class="promise-line">
+                    “Tots units fem força.”<br>
+                    (Together we are strong.)
+                </div>
+                
+                Whether at the top of the world or fighting to return there, our pulse remains Blaugrana. Long live the style, long live the legends, and long live the club.
+                <br><br>
+                Visca el Barça i visca Catalunya! 🔵🔴
+            </div>
+            
+            <div class="stamp-container">
+                 <svg viewBox="0 0 120 120" class="stamp-svg">
+                    <path id="curve" d="M 60, 60 m -45, 0 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0" fill="none"/>
+                    <text width="120" font-family="Poppins, sans-serif" font-weight="700" font-size="12" fill="#e6aeb0" letter-spacing="1px">
+                        <textPath xlink:href="#curve" startOffset="50%" text-anchor="middle"> Barça  Barça  Barça  Barça </textPath>
+                    </text>
+                    <text x="60" y="68" font-size="24" text-anchor="middle" fill="#e6aeb0">❤️</text>
+                </svg>
+            </div>
+            
+            <div class="ps-container ink">
+                <div class="ps-title">P.S. NOTA DEL CLUB:</div>
+                The values of this crest are built on loyalty.
+            </div>
+            
+            <button id="wish-btn">VISCA EL BARÇA</button>
+        </div>
+    </div>
+</div>
+
+<div id="final-wish-screen">
+    <div class="wish-text" id="final-text">FOR THE PRIDE OF<br>THE BLAUGRANA COLORS.</div>
+    <div class="closure-text" id="closure-text">GLORY TO THE LEGENDS.</div>
+    <button id="hold-btn">FORÇA BARÇA</button>
+</div>
+
+<div id="ultimate-black-screen">
+    <img src="https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg" id="fcb-logo">
+    <div id="final-hbd">MÉS QUE UN CLUB</div>
+    <div id="final-love">BARÇA PER SEMPRE</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+
+<script src="js/data.js"></script>
+<script src="js/three-scene.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/interactions.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
